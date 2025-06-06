@@ -1,6 +1,8 @@
 // services/sheetsService.js
 const { google } = require('googleapis');
+global.Headers = require('node-fetch').Headers; // <--- Agregá esta línea
 require('dotenv').config();
+
 
 async function guardarEnSheets(fila) {
   try {
